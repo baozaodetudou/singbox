@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "plex.tv",
+        "doumao.fun"
+      ],
+      "domain_keyword": [
+        "announce",
+        "torrent"
+      ],
+      "domain_suffix": [
+        "biomind.cn",
+        "hhan.club"
+      ]
+    }
+  ]
+}
