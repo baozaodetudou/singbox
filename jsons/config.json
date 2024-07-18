@@ -1,19 +1,19 @@
 {
   "outbounds": [
-    { "tag": "🚀节点选择", "type": "selector", "outbounds": [ "🎯全球直连", "🇭🇰香港节点", "🇨🇳台湾节点", "🇰🇷韩国节点", "🇯🇵日本节点", "🇸🇬新加坡节点", "🇺🇸美国节点", "👍🏻3x专区", "👍🏻5x专区", "👍🏻2x专区", "🆓3x专区", "🆓大航海", "tag", "🇨🇦加拿大"] },
-    { "tag": "🐟漏网之鱼", "type": "selector", "outbounds": [ "🎯全球直连", "🚀节点选择", "🆓3x专区", "🆓大航海"] },
+    { "tag": "🚀节点选择", "type": "selector", "outbounds": [ "🎯全球直连", "🇭🇰香港节点", "🇨🇳台湾节点", "🇰🇷韩国节点", "🇯🇵日本节点", "🇸🇬新加坡节点", "🇺🇸美国节点", "👍🏻3x专区", "👍🏻5x专区", "👍🏻2x专区", "🆓3x专区", "tag", "🇨🇦加拿大"] },
+    { "tag": "🐟漏网之鱼", "type": "selector", "outbounds": [ "🎯全球直连", "🚀节点选择", "🆓3x专区"] },
     { "tag": "👦の直连", "type": "selector", "outbounds": [ "🎯全球直连" ] },
-    { "tag": "👦の代理", "type": "selector", "outbounds": [ "🎯全球直连", "🚀节点选择", "🆓3x专区", "🆓大航海"] },
-    { "tag": "📈网络测试", "type": "selector", "outbounds": [ "🎯全球直连", "🇭🇰香港节点", "🇨🇳台湾节点", "🇰🇷韩国节点", "🇯🇵日本节点", "🇸🇬新加坡节点", "🇺🇸美国节点", "👍🏻3x专区", "👍🏻5x专区", "👍🏻2x专区", "🆓3x专区", "🆓大航海", "tag", "🇨🇦加拿大"] },
-    { "tag": "🤖人工智能", "type": "selector", "outbounds": [ "🚀节点选择", "🇭🇰香港节点", "🇨🇳台湾节点", "🇰🇷韩国节点", "🇯🇵日本节点", "🇸🇬新加坡节点", "🇺🇸美国节点", "👍🏻3x专区", "👍🏻5x专区", "👍🏻2x专区", "🆓3x专区", "🆓大航海", "tag", "🇨🇦加拿大"] },
-    { "tag": "🎮游戏服务", "type": "selector", "outbounds": [ "🎯全球直连", "🚀节点选择", "🆓3x专区", "🆓大航海"] },
-    { "tag": "🪟微软服务", "type": "selector", "outbounds": [ "🎯全球直连", "🚀节点选择", "🆓3x专区", "🆓大航海"] },
-    { "tag": "💻谷歌服务", "type": "selector", "outbounds": [ "🎯全球直连", "🚀节点选择", "🆓3x专区", "🆓大航海"] },
-    { "tag": "🍎苹果服务", "type": "selector", "outbounds": [ "🎯全球直连", "🚀节点选择", "🆓3x专区", "🆓大航海"] },
+    { "tag": "👦の代理", "type": "selector", "outbounds": [ "🎯全球直连", "🚀节点选择", "🆓3x专区"] },
+    { "tag": "📈网络测试", "type": "selector", "outbounds": [ "🎯全球直连", "🇭🇰香港节点", "🇨🇳台湾节点", "🇰🇷韩国节点", "🇯🇵日本节点", "🇸🇬新加坡节点", "🇺🇸美国节点", "👍🏻3x专区", "👍🏻5x专区", "👍🏻2x专区", "🆓3x专区", "tag", "🇨🇦加拿大"] },
+    { "tag": "🤖人工智能", "type": "selector", "outbounds": [ "🚀节点选择", "🇭🇰香港节点", "🇨🇳台湾节点", "🇰🇷韩国节点", "🇯🇵日本节点", "🇸🇬新加坡节点", "🇺🇸美国节点", "👍🏻3x专区", "👍🏻5x专区", "👍🏻2x专区", "🆓3x专区", "tag", "🇨🇦加拿大"] },
+    { "tag": "🎮游戏服务", "type": "selector", "outbounds": [ "🎯全球直连", "🚀节点选择", "🆓3x专区"] },
+    { "tag": "🪟微软服务", "type": "selector", "outbounds": [ "🎯全球直连", "🚀节点选择", "🆓3x专区"] },
+    { "tag": "💻谷歌服务", "type": "selector", "outbounds": [ "🎯全球直连", "🚀节点选择", "🆓3x专区"] },
+    { "tag": "🍎苹果服务", "type": "selector", "outbounds": [ "🎯全球直连", "🚀节点选择", "🆓3x专区"] },
     { "tag": "🇨🇳直连域名", "type": "selector", "outbounds": [ "🎯全球直连", "🚀节点选择" ] },
     { "tag": "🇨🇳直连IP", "type": "selector", "outbounds": [ "🎯全球直连", "🚀节点选择" ] },
-    { "tag": "🪜代理域名", "type": "selector", "outbounds": [ "🚀节点选择", "🎯全球直连", "🆓3x专区", "🆓大航海"] },
-    { "tag": "📲电报消息", "type": "selector", "outbounds": [ "🚀节点选择", "🆓3x专区", "🆓大航海"] },
+    { "tag": "🪜代理域名", "type": "selector", "outbounds": [ "🚀节点选择", "🎯全球直连", "🆓3x专区"] },
+    { "tag": "📲电报消息", "type": "selector", "outbounds": [ "🚀节点选择", "🆓3x专区"] },
     { "tag": "🔒私有网络", "type": "selector", "outbounds": [ "🎯全球直连" ] },
     { "tag": "🎬PT", "type": "selector", "outbounds": [ "🎯全球直连" ] },
     { "tag": "🛑广告拦截", "type": "selector", "outbounds": [ "REJECT" ] },
@@ -21,9 +21,11 @@
     { "tag": "REJECT", "type": "block" },
     { "tag": "DIRECT", "type": "direct" },
     { "tag": "PROXY", "type": "urltest", "tolerance": 50, "use_all_providers": true },
-    { "tag": "GLOBAL", "type": "selector", "outbounds": [ "DIRECT", "REJECT", "🇭🇰香港节点", "🇨🇳台湾节点", "🇰🇷韩国节点", "🇯🇵日本节点", "🇸🇬新加坡节点", "🇺🇸美国节点", "👍🏻3x专区", "👍🏻5x专区", "👍🏻2x专区", "🆓3x专区", "🆓大航海", "tag", "🇨🇦加拿大"] },
+    { "tag": "GLOBAL", "type": "selector", "outbounds": [ "DIRECT", "REJECT", "🇭🇰香港节点", "🇨🇳台湾节点", "🇰🇷韩国节点", "🇯🇵日本节点", "🇸🇬新加坡节点", "🇺🇸美国节点", "👍🏻3x专区", "👍🏻5x专区", "👍🏻2x专区", "🆓3x专区", "tag", "🇨🇦加拿大"] },
     { "tag": "dns-out", "type": "dns" },
 
+    { "tag": "🆓3x专区", "type": "urltest", "tolerance": 50, "providers": [ "✈️大航海"], "includes": [ "(?i)3x|x3" ] },
+    { "tag": "🆓大航海", "type": "urltest", "tolerance": 50, "providers": [ "✈️大航海"]},
     { "tag": "🇭🇰香港节点", "type": "urltest", "tolerance": 50, "use_all_providers": true, "includes": [ "(?i)港|hk|hongkong|hong kong|HK|Hong|🇭🇰" ] },
     { "tag": "🇨🇳台湾节点", "type": "urltest", "tolerance": 50, "use_all_providers": true, "includes": [ "(?i)台|tw|taiwan" ] },
     { "tag": "🇰🇷韩国节点", "type": "urltest", "tolerance": 50, "use_all_providers": true, "includes": [ "(?i)韩国|韩|Korea|KR|korea|🇰🇷" ] },
@@ -34,25 +36,23 @@
     { "tag": "👍🏻3x专区", "type": "urltest", "tolerance": 50, "use_all_providers": true, "includes": [ "(?i)3x|x3" ] },
     { "tag": "👍🏻5x专区", "type": "urltest", "tolerance": 50, "use_all_providers": true, "includes": [ "(?i)5x|x5" ] },
     { "tag": "👍🏻2x专区", "type": "urltest", "tolerance": 50, "use_all_providers": true, "includes": [ "(?i)2x|x2" ] },
-    { "tag": "🆓3x专区", "type": "urltest", "tolerance": 50, "providers": [ "✈️大航海"], "includes": [ "(?i)3x|x3" ] },
-    { "tag": "🆓大航海", "type": "urltest", "tolerance": 50, "providers": [ "✈️大航海"]},
     { "tag": "tag", "type": "urltest", "tolerance": 50, "providers": ["✈️tag"]}
   ],
   "outbound_providers": [
     {
       "tag": "✈️大航海",
       "type": "remote",
-      "download_url": "",
+      "download_url": "https://",
       "path": "./providers/dhh.yaml",
       "download_interval": "24h",
       "download_ua": "clash.meta",
       "healthcheck_url": "https://www.gstatic.com/generate_204",
-      "healthcheck_interval": "10m"
+      "healthcheck_interval": "12h"
     },
     {
       "tag": "✈️tag",
       "type": "remote",
-      "download_url": "https://tagcdnsub.work/api/v1/",
+      "download_url": "https://tagcdnsub.work/",
       "path": "./providers/tag.yaml",
       "download_interval": "24h",
       "download_ua": "clash.meta",
@@ -66,34 +66,8 @@
       { "clash_mode": "Direct", "outbound": "DIRECT" },
       { "clash_mode": "Global", "outbound": "GLOBAL" },
       { "rule_set": [ "ads" ], "outbound": "🛑广告拦截" },
-      {
-        "domain": [
-        "plex.tv",
-        "doumao.fun"
-        ],
-        "domain_keyword": [
-          "announce",
-          "torrent"
-        ],
-        "domain_suffix": [
-          "biomind.cn",
-          "hhan.club"
-        ],
-        "outbound": "👦の直连"
-      },
-      {
-        "domain": [
-        "hub.docker.com",
-        "github.com"
-        ],
-        "domain_keyword": [
-          
-        ],
-        "domain_suffix": [
-          "appstorrent.ru"
-        ],
-        "outbound": "👦の代理"
-      },
+      { "rule_set": [ "mydirect" ], "outbound": "👦の直连" },
+      { "rule_set": [ "myproxy" ], "outbound": "👦の代理" },
       { "port_range": [ "10000:30000" ], "outbound": "🎯全球直连"},
       { "rule_set": [ "private" ], "outbound": "🔒私有网络" },
       { "rule_set": [ "microsoft-cn" ], "outbound": "🪟微软服务" },
@@ -110,6 +84,20 @@
       { "rule_set": [ "cnip" ], "outbound": "🇨🇳直连IP" }
     ],
     "rule_set": [
+      {
+        "tag": "mydirect",
+        "type": "remote",
+        "format": "source",
+        "path": "./ruleset/direct.json",
+        "url": "https://raw.githubusercontent.com/baozaodetudou/singbox/main/rule/direct.json"
+      },
+      {
+        "tag": "myproxy",
+        "type": "remote",
+        "format": "source",
+        "path": "*/ruleset/proxy.json",
+        "url": "https://raw.githubusercontent.com/baozaodetudou/singbox/main/rule/proxy.json"
+      },
       {
         "tag": "ads",
         "type": "remote",
