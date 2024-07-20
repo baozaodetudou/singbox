@@ -1,205 +1,206 @@
 {
-  "outbounds": [
-    { "tag": "🚀节点选择", "type": "selector", "outbounds": [ "🎯全球直连", "🇭🇰香港节点", "🇨🇳台湾节点", "🇰🇷韩国节点", "🇯🇵日本节点", "🇸🇬新加坡节点", "🇺🇸美国节点", "👍🏻3x专区", "👍🏻5x专区", "👍🏻2x专区", "🆓3x专区", "tag", "🇨🇦加拿大"] },
-    { "tag": "🐟漏网之鱼", "type": "selector", "outbounds": [ "🎯全球直连", "🚀节点选择", "🆓3x专区"] },
-    { "tag": "👦の直连", "type": "selector", "outbounds": [ "🎯全球直连" ] },
-    { "tag": "👦の代理", "type": "selector", "outbounds": [ "🎯全球直连", "🚀节点选择", "🆓3x专区"] },
-    { "tag": "📈网络测试", "type": "selector", "outbounds": [ "🎯全球直连", "🇭🇰香港节点", "🇨🇳台湾节点", "🇰🇷韩国节点", "🇯🇵日本节点", "🇸🇬新加坡节点", "🇺🇸美国节点", "👍🏻3x专区", "👍🏻5x专区", "👍🏻2x专区", "🆓3x专区", "tag", "🇨🇦加拿大"] },
-    { "tag": "🤖人工智能", "type": "selector", "outbounds": [ "🚀节点选择", "🇭🇰香港节点", "🇨🇳台湾节点", "🇰🇷韩国节点", "🇯🇵日本节点", "🇸🇬新加坡节点", "🇺🇸美国节点", "👍🏻3x专区", "👍🏻5x专区", "👍🏻2x专区", "🆓3x专区", "tag", "🇨🇦加拿大"] },
-    { "tag": "🎮游戏服务", "type": "selector", "outbounds": [ "🎯全球直连", "🚀节点选择", "🆓3x专区"] },
-    { "tag": "🪟微软服务", "type": "selector", "outbounds": [ "🎯全球直连", "🚀节点选择", "🆓3x专区"] },
-    { "tag": "💻谷歌服务", "type": "selector", "outbounds": [ "🎯全球直连", "🚀节点选择", "🆓3x专区"] },
-    { "tag": "🍎苹果服务", "type": "selector", "outbounds": [ "🎯全球直连", "🚀节点选择", "🆓3x专区"] },
-    { "tag": "🇨🇳直连域名", "type": "selector", "outbounds": [ "🎯全球直连", "🚀节点选择" ] },
-    { "tag": "🇨🇳直连IP", "type": "selector", "outbounds": [ "🎯全球直连", "🚀节点选择" ] },
-    { "tag": "🪜代理域名", "type": "selector", "outbounds": [ "🚀节点选择", "🎯全球直连", "🆓3x专区"] },
-    { "tag": "📲电报消息", "type": "selector", "outbounds": [ "🚀节点选择", "🆓3x专区"] },
-    { "tag": "🔒私有网络", "type": "selector", "outbounds": [ "🎯全球直连" ] },
-    { "tag": "🎬PT", "type": "selector", "outbounds": [ "🎯全球直连" ] },
-    { "tag": "🛑广告拦截", "type": "selector", "outbounds": [ "REJECT" ] },
-    { "tag": "🎯全球直连", "type": "selector", "outbounds": [ "DIRECT" ] },
-    { "tag": "REJECT", "type": "block" },
-    { "tag": "DIRECT", "type": "direct" },
-    { "tag": "PROXY", "type": "urltest", "tolerance": 50, "use_all_providers": true },
-    { "tag": "GLOBAL", "type": "selector", "outbounds": [ "DIRECT", "REJECT", "🇭🇰香港节点", "🇨🇳台湾节点", "🇰🇷韩国节点", "🇯🇵日本节点", "🇸🇬新加坡节点", "🇺🇸美国节点", "👍🏻3x专区", "👍🏻5x专区", "👍🏻2x专区", "🆓3x专区", "tag", "🇨🇦加拿大"] },
-    { "tag": "dns-out", "type": "dns" },
-
-    { "tag": "🆓3x专区", "type": "urltest", "tolerance": 50, "providers": [ "✈️大航海"], "includes": [ "(?i)3x|x3" ] },
-    { "tag": "🆓大航海", "type": "urltest", "tolerance": 50, "providers": [ "✈️大航海"]},
-    { "tag": "🇭🇰香港节点", "type": "urltest", "tolerance": 50, "use_all_providers": true, "includes": [ "(?i)港|hk|hongkong|hong kong|HK|Hong|🇭🇰" ] },
-    { "tag": "🇨🇳台湾节点", "type": "urltest", "tolerance": 50, "use_all_providers": true, "includes": [ "(?i)台|tw|taiwan" ] },
-    { "tag": "🇰🇷韩国节点", "type": "urltest", "tolerance": 50, "use_all_providers": true, "includes": [ "(?i)韩国|韩|Korea|KR|korea|🇰🇷" ] },
-    { "tag": "🇯🇵日本节点", "type": "urltest", "tolerance": 50, "providers": [ "✈️大航海", "✈️tag"], "includes": [ "(?i)日本|jp|japan|JP|Japan|日|🇯🇵" ] },
-    { "tag": "🇸🇬新加坡节点", "type": "urltest", "tolerance": 50, "use_all_providers": true, "includes": [ "(?i)新|sg|singapore|新加坡|SG|🇸🇬" ] },
-    { "tag": "🇺🇸美国节点", "type": "urltest", "tolerance": 50, "use_all_providers": true, "includes": [ "(?i)澳大利亚|澳|au|AU|🇦🇺" ] },
-    { "tag": "🇨🇦加拿大", "type": "urltest", "tolerance": 50, "use_all_providers": true, "includes": [ "(?i)加拿大|ca|CA|🇨🇦" ] },
-    { "tag": "👍🏻3x专区", "type": "urltest", "tolerance": 50, "use_all_providers": true, "includes": [ "(?i)3x|x3" ] },
-    { "tag": "👍🏻5x专区", "type": "urltest", "tolerance": 50, "use_all_providers": true, "includes": [ "(?i)5x|x5" ] },
-    { "tag": "👍🏻2x专区", "type": "urltest", "tolerance": 50, "use_all_providers": true, "includes": [ "(?i)2x|x2" ] },
-    { "tag": "tag", "type": "urltest", "tolerance": 50, "providers": ["✈️tag"]}
-  ],
-  "outbound_providers": [
-    {
-      "tag": "✈️大航海",
-      "type": "remote",
-      "download_url": "https://",
-      "path": "./providers/dhh.yaml",
-      "download_interval": "24h",
-      "download_ua": "clash.meta",
-      "healthcheck_url": "https://www.gstatic.com/generate_204",
-      "healthcheck_interval": "12h"
-    },
-    {
-      "tag": "✈️tag",
-      "type": "remote",
-      "download_url": "https://tagcdnsub.work/",
-      "path": "./providers/tag.yaml",
-      "download_interval": "24h",
-      "download_ua": "clash.meta",
-      "healthcheck_url": "https://www.gstatic.com/generate_204",
-      "healthcheck_interval": "10m"
-    }
-  ],
-  "route": {
-    "rules": [
-      { "protocol": [ "dns" ], "outbound": "dns-out" },
-      { "clash_mode": "Direct", "outbound": "DIRECT" },
-      { "clash_mode": "Global", "outbound": "GLOBAL" },
-      { "rule_set": [ "ads" ], "outbound": "🛑广告拦截" },
-      { "rule_set": [ "mydirect" ], "outbound": "👦の直连" },
-      { "rule_set": [ "myproxy" ], "outbound": "👦の代理" },
-      { "port_range": [ "10000:30000" ], "outbound": "🎯全球直连"},
-      { "rule_set": [ "private" ], "outbound": "🔒私有网络" },
-      { "rule_set": [ "microsoft-cn" ], "outbound": "🪟微软服务" },
-      { "rule_set": [ "apple-cn" ], "outbound": "🍎苹果服务" },
-      { "rule_set": [ "google-cn" ], "outbound": "💻谷歌服务" },
-      { "rule_set": [ "games-cn" ], "outbound": "🎮游戏服务" },
-      { "rule_set": [ "ai" ], "outbound": "🤖人工智能" },
-      { "rule_set": [ "networktest" ], "outbound": "📈网络测试" },
-      { "rule_set": [ "proxy" ], "outbound": "🪜代理域名" },
-      { "rule_set": [ "cn" ], "outbound": "🇨🇳直连域名" },
-      { "rule_set": [ "telegramip" ], "outbound": "📲电报消息", "skip_resolve": true },
-      { "rule_set": [ "privateip" ],  "outbound": "🔒私有网络", "skip_resolve": true },
-      { "rule_set": [ "pt" ],  "outbound": "🎬PT" },
-      { "rule_set": [ "cnip" ], "outbound": "🇨🇳直连IP" }
+    
+    "outbounds": [
+      { "tag": "🚀节点选择", "type": "selector", "outbounds": [ "🎯全球直连", "🇭🇰香港节点", "🇨🇳台湾节点", "🇰🇷韩国节点", "🇯🇵日本节点", "🇸🇬新加坡节点", "🇺🇸美国节点", "👍🏻3x专区", "👍🏻5x专区", "👍🏻2x专区", "🆓3x专区", "tag", "🇨🇦加拿大"] },
+      { "tag": "🐟漏网之鱼", "type": "selector", "outbounds": [ "🎯全球直连", "🚀节点选择", "🆓3x专区"] },
+      { "tag": "👦の直连", "type": "selector", "outbounds": [ "🎯全球直连" ] },
+      { "tag": "👦の代理", "type": "selector", "outbounds": [ "🎯全球直连", "🚀节点选择", "🆓3x专区"] },
+      { "tag": "📈网络测试", "type": "selector", "outbounds": [ "🎯全球直连", "🇭🇰香港节点", "🇨🇳台湾节点", "🇰🇷韩国节点", "🇯🇵日本节点", "🇸🇬新加坡节点", "🇺🇸美国节点", "👍🏻3x专区", "👍🏻5x专区", "👍🏻2x专区", "🆓3x专区", "tag", "🇨🇦加拿大"] },
+      { "tag": "🤖人工智能", "type": "selector", "outbounds": [ "🚀节点选择", "🇭🇰香港节点", "🇨🇳台湾节点", "🇰🇷韩国节点", "🇯🇵日本节点", "🇸🇬新加坡节点", "🇺🇸美国节点", "👍🏻3x专区", "👍🏻5x专区", "👍🏻2x专区", "🆓3x专区", "tag", "🇨🇦加拿大"] },
+      { "tag": "🎮游戏服务", "type": "selector", "outbounds": [ "🎯全球直连", "🚀节点选择", "🆓3x专区"] },
+      { "tag": "🪟微软服务", "type": "selector", "outbounds": [ "🎯全球直连", "🚀节点选择", "🆓3x专区"] },
+      { "tag": "💻谷歌服务", "type": "selector", "outbounds": [ "🎯全球直连", "🚀节点选择", "🆓3x专区"] },
+      { "tag": "🍎苹果服务", "type": "selector", "outbounds": [ "🎯全球直连", "🚀节点选择", "🆓3x专区"] },
+      { "tag": "🇨🇳直连域名", "type": "selector", "outbounds": [ "🎯全球直连", "🚀节点选择" ] },
+      { "tag": "🇨🇳直连IP", "type": "selector", "outbounds": [ "🎯全球直连", "🚀节点选择" ] },
+      { "tag": "🪜代理域名", "type": "selector", "outbounds": [ "🚀节点选择", "🎯全球直连", "🆓3x专区"] },
+      { "tag": "📲电报消息", "type": "selector", "outbounds": [ "🚀节点选择", "🆓3x专区"] },
+      { "tag": "🔒私有网络", "type": "selector", "outbounds": [ "🎯全球直连" ] },
+      { "tag": "🎬PT", "type": "selector", "outbounds": [ "🎯全球直连" ] },
+      { "tag": "🛑广告拦截", "type": "selector", "outbounds": [ "REJECT" ] },
+      { "tag": "🎯全球直连", "type": "selector", "outbounds": [ "DIRECT" ] },
+      { "tag": "REJECT", "type": "block" },
+      { "tag": "DIRECT", "type": "direct" },
+      { "tag": "PROXY", "type": "urltest", "tolerance": 100, "use_all_providers": true },
+      { "tag": "GLOBAL", "type": "selector", "outbounds": [ "DIRECT", "REJECT", "🇭🇰香港节点", "🇨🇳台湾节点", "🇰🇷韩国节点", "🇯🇵日本节点", "🇸🇬新加坡节点", "🇺🇸美国节点", "👍🏻3x专区", "👍🏻5x专区", "👍🏻2x专区", "🆓3x专区", "tag", "🇨🇦加拿大"] },
+      { "tag": "dns-out", "type": "dns" },
+  
+      { "tag": "🆓3x专区", "type": "urltest", "tolerance": 100, "providers": [ "✈️大航海"], "includes": [ "(?i)3x|x3" ] },
+      { "tag": "🆓大航海", "type": "urltest", "tolerance": 100, "providers": [ "✈️大航海"]},
+      { "tag": "🇭🇰香港节点", "type": "urltest", "tolerance": 100, "use_all_providers": true, "includes": [ "(?i)港|hk|hongkong|hong kong|HK|Hong|🇭🇰" ] },
+      { "tag": "🇨🇳台湾节点", "type": "urltest", "tolerance": 100, "use_all_providers": true, "includes": [ "(?i)台|tw|taiwan" ] },
+      { "tag": "🇰🇷韩国节点", "type": "urltest", "tolerance": 100, "use_all_providers": true, "includes": [ "(?i)韩国|韩|Korea|KR|korea|🇰🇷" ] },
+      { "tag": "🇯🇵日本节点", "type": "urltest", "tolerance": 100, "providers": [ "✈️大航海", "✈️tag"], "includes": [ "(?i)日本|jp|japan|JP|Japan|日|🇯🇵" ] },
+      { "tag": "🇸🇬新加坡节点", "type": "urltest", "tolerance": 100, "use_all_providers": true, "includes": [ "(?i)新|sg|singapore|新加坡|SG|🇸🇬" ] },
+      { "tag": "🇺🇸美国节点", "type": "urltest", "tolerance": 100, "use_all_providers": true, "includes": [ "(?i)澳大利亚|澳|au|AU|🇦🇺" ] },
+      { "tag": "🇨🇦加拿大", "type": "urltest", "tolerance": 100, "use_all_providers": true, "includes": [ "(?i)加拿大|ca|CA|🇨🇦" ] },
+      { "tag": "👍🏻3x专区", "type": "urltest", "tolerance": 100, "use_all_providers": true, "includes": [ "(?i)3x|x3" ] },
+      { "tag": "👍🏻5x专区", "type": "urltest", "tolerance": 100, "use_all_providers": true, "includes": [ "(?i)5x|x5" ] },
+      { "tag": "👍🏻2x专区", "type": "urltest", "tolerance": 100, "use_all_providers": true, "includes": [ "(?i)2x|x2" ] },
+      { "tag": "tag", "type": "urltest", "tolerance": 100, "providers": ["✈️tag"]}
     ],
-    "rule_set": [
+    "outbound_providers": [
       {
-        "tag": "mydirect",
+        "tag": "✈️大航海",
         "type": "remote",
-        "format": "source",
-        "path": "./ruleset/direct.json",
-        "url": "https://raw.githubusercontent.com/baozaodetudou/singbox/main/rule/direct.json"
+        "download_url": "https://&flag=clash",
+        "path": "./providers/dhh.yaml",
+        "download_interval": "24h",
+        "download_ua": "clash.meta",
+        "healthcheck_url": "https://www.gstatic.com/generate_204",
+        "healthcheck_interval": "10m"
       },
       {
-        "tag": "myproxy",
+        "tag": "✈️tag",
         "type": "remote",
-        "format": "source",
-        "path": "*/ruleset/proxy.json",
-        "url": "https://raw.githubusercontent.com/baozaodetudou/singbox/main/rule/proxy.json"
-      },
-      {
-        "tag": "ads",
-        "type": "remote",
-        "format": "binary",
-        "path": "./ruleset/ads.srs",
-        "url": "https://raw.githubusercontent.com/DustinWin/ruleset_geodata/sing-box-ruleset/ads.srs"
-      },
-      {
-        "tag": "private",
-        "type": "remote",
-        "format": "binary",
-        "path": "./ruleset/private.srs",
-        "url": "https://raw.githubusercontent.com/DustinWin/ruleset_geodata/sing-box-ruleset/private.srs"
-      },
-      {
-        "tag": "microsoft-cn",
-        "type": "remote",
-        "format": "binary",
-        "path": "./ruleset/microsoft-cn.srs",
-        "url": "https://raw.githubusercontent.com/DustinWin/ruleset_geodata/sing-box-ruleset/microsoft-cn.srs"
-      },
-      {
-        "tag": "apple-cn",
-        "type": "remote",
-        "format": "binary",
-        "path": "./ruleset/apple-cn.srs",
-        "url": "https://raw.githubusercontent.com/DustinWin/ruleset_geodata/sing-box-ruleset/apple-cn.srs"
-      },
-      {
-        "tag": "google-cn",
-        "type": "remote",
-        "format": "binary",
-        "path": "./ruleset/google-cn.srs",
-        "url": "https://raw.githubusercontent.com/DustinWin/ruleset_geodata/sing-box-ruleset/google-cn.srs"
-      },
-      {
-        "tag": "games-cn",
-        "type": "remote",
-        "format": "binary",
-        "path": "./ruleset/games-cn.srs",
-        "url": "https://raw.githubusercontent.com/DustinWin/ruleset_geodata/sing-box-ruleset/games-cn.srs"
-      },
-      {
-        "tag": "ai",
-        "type": "remote",
-        "format": "binary",
-        "path": "./ruleset/ai.srs",
-        "url": "https://raw.githubusercontent.com/DustinWin/ruleset_geodata/sing-box-ruleset/ai.srs"
-      },
-      {
-        "tag": "networktest",
-        "type": "remote",
-        "format": "binary",
-        "path": "./ruleset/networktest.srs",
-        "url": "https://raw.githubusercontent.com/DustinWin/ruleset_geodata/sing-box-ruleset/networktest.srs"
-      },
-      {
-        "tag": "proxy",
-        "type": "remote",
-        "format": "binary",
-        "path": "./ruleset/proxy.srs",
-        "url": "https://raw.githubusercontent.com/DustinWin/ruleset_geodata/sing-box-ruleset/proxy.srs"
-      },
-      {
-        "tag": "cn",
-        "type": "remote",
-        "format": "binary",
-        "path": "./ruleset/cn.srs",
-        "url": "https://raw.githubusercontent.com/DustinWin/ruleset_geodata/sing-box-ruleset/cn.srs"
-      },
-      {
-        "tag": "telegramip",
-        "type": "remote",
-        "format": "binary",
-        "path": "./ruleset/telegramip.srs",
-        "url": "https://raw.githubusercontent.com/DustinWin/ruleset_geodata/sing-box-ruleset/telegramip.srs"
-      },
-      {
-        "tag": "privateip",
-        "type": "remote",
-        "format": "binary",
-        "path": "./ruleset/privateip.srs",
-        "url": "https://raw.githubusercontent.com/DustinWin/ruleset_geodata/sing-box-ruleset/privateip.srs"
-      },
-      {
-        "tag": "pt",
-        "type": "remote",
-        "format": "binary",
-        "path": "./ruleset/pt.srs",
-        "url": "https://raw.githubusercontent.com/baozaodetudou/ruleset_geodata/sing-box-ruleset/pt.srs"
-      },
-      {
-        "tag": "cnip",
-        "type": "remote",
-        "format": "binary",
-        "path": "./ruleset/cnip.srs",
-        "url": "https://raw.githubusercontent.com/DustinWin/ruleset_geodata/sing-box-ruleset/cnip.srs"
+        "download_url": "https://&flag=clash",
+        "path": "./providers/tag.yaml",
+        "download_interval": "24h",
+        "download_ua": "clash.meta",
+        "healthcheck_url": "https://www.gstatic.com/generate_204",
+        "healthcheck_interval": "10m"
       }
     ],
-    "final": "🐟漏网之鱼",
-    "auto_detect_interface": true,
-    "concurrent_dial": true
+    "route": {
+        "rules": [
+          { "protocol": [ "dns" ], "outbound": "dns-out" },
+          { "clash_mode": "Direct", "outbound": "DIRECT" },
+          { "clash_mode": "Global", "outbound": "GLOBAL" },
+          { "rule_set": [ "ads" ], "outbound": "🛑广告拦截" },
+          { "rule_set": [ "mydirect" ], "outbound": "👦の直连" },
+          { "rule_set": [ "myproxy" ], "outbound": "👦の代理" },
+          { "rule_set": [ "pt" ],  "outbound": "🎬PT" },
+          { "port_range": [ "10000:30000" ], "outbound": "🎯全球直连"},
+          { "rule_set": [ "private" ], "outbound": "🔒私有网络" },
+          { "rule_set": [ "microsoft-cn" ], "outbound": "🪟微软服务" },
+          { "rule_set": [ "apple-cn" ], "outbound": "🍎苹果服务" },
+          { "rule_set": [ "google-cn" ], "outbound": "💻谷歌服务" },
+          { "rule_set": [ "games-cn" ], "outbound": "🎮游戏服务" },
+          { "rule_set": [ "ai" ], "outbound": "🤖人工智能" },
+          { "rule_set": [ "networktest" ], "outbound": "📈网络测试" },
+          { "rule_set": [ "cn" ], "outbound": "🇨🇳直连域名" },
+          { "rule_set": [ "telegramip" ], "outbound": "📲电报消息", "skip_resolve": true },
+          { "rule_set": [ "privateip" ],  "outbound": "🔒私有网络", "skip_resolve": true },
+          { "rule_set": [ "proxy" ], "outbound": "🪜代理域名" },
+          { "rule_set": [ "cnip" ], "outbound": "🇨🇳直连IP", "skip_resolve": true }
+        ],
+        "rule_set": [
+          {
+            "tag": "mydirect",
+            "type": "remote",
+            "format": "source",
+            "path": "./ruleset/direct.json",
+            "url": "https://raw.githubusercontent.com/baozaodetudou/singbox/main/rule/direct.json"
+          },
+          {
+            "tag": "myproxy",
+            "type": "remote",
+            "format": "source",
+            "path": "*/ruleset/proxy.json",
+            "url": "https://raw.githubusercontent.com/baozaodetudou/singbox/main/rule/proxy.json"
+          },
+          {
+            "tag": "ads",
+            "type": "remote",
+            "format": "binary",
+            "path": "./ruleset/ads.srs",
+            "url": "https://raw.githubusercontent.com/DustinWin/ruleset_geodata/sing-box-ruleset/ads.srs"
+          },
+          {
+            "tag": "private",
+            "type": "remote",
+            "format": "binary",
+            "path": "./ruleset/private.srs",
+            "url": "https://raw.githubusercontent.com/DustinWin/ruleset_geodata/sing-box-ruleset/private.srs"
+          },
+          {
+            "tag": "microsoft-cn",
+            "type": "remote",
+            "format": "binary",
+            "path": "./ruleset/microsoft-cn.srs",
+            "url": "https://raw.githubusercontent.com/DustinWin/ruleset_geodata/sing-box-ruleset/microsoft-cn.srs"
+          },
+          {
+            "tag": "apple-cn",
+            "type": "remote",
+            "format": "binary",
+            "path": "./ruleset/apple-cn.srs",
+            "url": "https://raw.githubusercontent.com/DustinWin/ruleset_geodata/sing-box-ruleset/apple-cn.srs"
+          },
+          {
+            "tag": "google-cn",
+            "type": "remote",
+            "format": "binary",
+            "path": "./ruleset/google-cn.srs",
+            "url": "https://raw.githubusercontent.com/DustinWin/ruleset_geodata/sing-box-ruleset/google-cn.srs"
+          },
+          {
+            "tag": "games-cn",
+            "type": "remote",
+            "format": "binary",
+            "path": "./ruleset/games-cn.srs",
+            "url": "https://raw.githubusercontent.com/DustinWin/ruleset_geodata/sing-box-ruleset/games-cn.srs"
+          },
+          {
+            "tag": "ai",
+            "type": "remote",
+            "format": "binary",
+            "path": "./ruleset/ai.srs",
+            "url": "https://raw.githubusercontent.com/DustinWin/ruleset_geodata/sing-box-ruleset/ai.srs"
+          },
+          {
+            "tag": "networktest",
+            "type": "remote",
+            "format": "binary",
+            "path": "./ruleset/networktest.srs",
+            "url": "https://raw.githubusercontent.com/DustinWin/ruleset_geodata/sing-box-ruleset/networktest.srs"
+          },
+          {
+            "tag": "proxy",
+            "type": "remote",
+            "format": "binary",
+            "path": "./ruleset/proxy.srs",
+            "url": "https://raw.githubusercontent.com/DustinWin/ruleset_geodata/sing-box-ruleset/proxy.srs"
+          },
+          {
+            "tag": "cn",
+            "type": "remote",
+            "format": "binary",
+            "path": "./ruleset/cn.srs",
+            "url": "https://raw.githubusercontent.com/DustinWin/ruleset_geodata/sing-box-ruleset/cn.srs"
+          },
+          {
+            "tag": "telegramip",
+            "type": "remote",
+            "format": "binary",
+            "path": "./ruleset/telegramip.srs",
+            "url": "https://raw.githubusercontent.com/DustinWin/ruleset_geodata/sing-box-ruleset/telegramip.srs"
+          },
+          {
+            "tag": "privateip",
+            "type": "remote",
+            "format": "binary",
+            "path": "./ruleset/privateip.srs",
+            "url": "https://raw.githubusercontent.com/DustinWin/ruleset_geodata/sing-box-ruleset/privateip.srs"
+          },
+          {
+            "tag": "pt",
+            "type": "remote",
+            "format": "binary",
+            "path": "./ruleset/pt.srs",
+            "url": "https://raw.githubusercontent.com/baozaodetudou/ruleset_geodata/sing-box-ruleset/pt.srs"
+          },
+          {
+            "tag": "cnip",
+            "type": "remote",
+            "format": "binary",
+            "path": "./ruleset/cnip.srs",
+            "url": "https://raw.githubusercontent.com/DustinWin/ruleset_geodata/sing-box-ruleset/cnip.srs"
+          }
+        ],
+        "final": "🐟漏网之鱼",
+        "auto_detect_interface": true,
+        "concurrent_dial": true
+      }
   }
-}
-
+  
