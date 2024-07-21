@@ -21,7 +21,7 @@
             {"query_type": ["A", "AAAA"], "server": "dns_fakeip"}
         ],
         "final": "dns_direct",
-        "strategy": "prefer_ipv4",
+        "strategy": "ipv4_only",
         "independent_cache": true,
         "lazy_cache": true,
         "reverse_mapping": true,
