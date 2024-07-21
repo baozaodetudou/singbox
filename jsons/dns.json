@@ -23,7 +23,7 @@
             }
         ],
         "final": "dns_direct",
-        "strategy": "ipv4_only",
+        "strategy": "prefer_ipv4",
         "independent_cache": true,
         "lazy_cache": true,
         "reverse_mapping": true,
