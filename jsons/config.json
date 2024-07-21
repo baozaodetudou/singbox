@@ -25,8 +25,8 @@
       { "tag": "GLOBAL", "type": "selector", "outbounds": [ "DIRECT", "REJECT", "🇭🇰香港节点", "🇨🇳台湾节点", "🇰🇷韩国节点", "🇯🇵日本节点", "🇸🇬新加坡节点", "🇺🇸美国节点", "👍🏻3x专区", "👍🏻5x专区", "👍🏻2x专区", "🆓3x专区", "tag", "🇨🇦加拿大"] },
       { "tag": "dns-out", "type": "dns" },
   
-      { "tag": "🆓3x专区", "type": "urltest", "tolerance": 100, "providers": [ "✈️大航海"], "includes": [ "(?i)3x|x3" ] },
-      { "tag": "🆓大航海", "type": "urltest", "tolerance": 100, "providers": [ "✈️大航海"]},
+      { "tag": "🆓3x专区", "type": "selector", "providers": [ "✈️大航海"], "includes": [ "(?i)3x|x3" ] },
+      { "tag": "🆓大航海", "type": "selector", "providers": [ "✈️大航海"]},
       { "tag": "🇭🇰香港节点", "type": "urltest", "tolerance": 100, "use_all_providers": true, "includes": [ "(?i)港|hk|hongkong|hong kong|HK|Hong|🇭🇰" ] },
       { "tag": "🇨🇳台湾节点", "type": "urltest", "tolerance": 100, "use_all_providers": true, "includes": [ "(?i)台|tw|taiwan" ] },
       { "tag": "🇰🇷韩国节点", "type": "urltest", "tolerance": 100, "use_all_providers": true, "includes": [ "(?i)韩国|韩|Korea|KR|korea|🇰🇷" ] },
@@ -37,13 +37,13 @@
       { "tag": "👍🏻3x专区", "type": "urltest", "tolerance": 100, "use_all_providers": true, "includes": [ "(?i)3x|x3" ] },
       { "tag": "👍🏻5x专区", "type": "urltest", "tolerance": 100, "use_all_providers": true, "includes": [ "(?i)5x|x5" ] },
       { "tag": "👍🏻2x专区", "type": "urltest", "tolerance": 100, "use_all_providers": true, "includes": [ "(?i)2x|x2" ] },
-      { "tag": "tag", "type": "urltest", "tolerance": 100, "providers": ["✈️tag"]}
+      { "tag": "tag", "type": "selector", "providers": ["✈️tag"]}
     ],
     "outbound_providers": [
       {
         "tag": "✈️大航海",
         "type": "remote",
-        "download_url": "https://&flag=clash",
+        "download_url": "https://换成你的订阅地址后边的flag参数别删&flag=clash",
         "path": "./providers/dhh.yaml",
         "download_interval": "24h",
         "download_ua": "clash.meta",
@@ -53,7 +53,7 @@
       {
         "tag": "✈️tag",
         "type": "remote",
-        "download_url": "https://&flag=clash",
+        "download_url": "换成你的订阅地址后边的flag参数别删&flag=clash",
         "path": "./providers/tag.yaml",
         "download_interval": "24h",
         "download_ua": "clash.meta",
@@ -89,14 +89,14 @@
             "tag": "mydirect",
             "type": "remote",
             "format": "source",
-            "path": "./ruleset/direct.json",
+            "path": "./ruleset/mydirect.json",
             "url": "https://raw.githubusercontent.com/baozaodetudou/singbox/main/rule/direct.json"
           },
           {
             "tag": "myproxy",
             "type": "remote",
             "format": "source",
-            "path": "*/ruleset/proxy.json",
+            "path": "*/ruleset/myproxy.json",
             "url": "https://raw.githubusercontent.com/baozaodetudou/singbox/main/rule/proxy.json"
           },
           {
