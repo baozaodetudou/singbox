@@ -96,7 +96,7 @@
             "tag": "myproxy",
             "type": "remote",
             "format": "source",
-            "path": "*/ruleset/myproxy.json",
+            "path": "./ruleset/myproxy.json",
             "url": "https://raw.githubusercontent.com/baozaodetudou/singbox/main/rule/proxy.json"
           },
           {
