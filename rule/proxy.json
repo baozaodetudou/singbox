@@ -4,6 +4,7 @@
     {
       "domain": [
         "hub.docker.com",
+        "fast.com",
         "github.com"
       ],
       "domain_keyword": [
