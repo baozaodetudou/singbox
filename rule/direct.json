@@ -4,6 +4,7 @@
     {
       "domain": [
         "plex.tv",
+        "plex.direct",
         "doumao.fun"
       ],
       "domain_keyword": [
@@ -13,7 +14,7 @@
         "torrent"
       ],
       "domain_suffix": [
-        "biomind.cn",
+        "plex.direct",
         "hhan.club"
       ]
     }
