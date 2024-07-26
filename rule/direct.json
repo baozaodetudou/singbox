@@ -17,8 +17,8 @@
         "plex.direct",
         "hhan.club"
       ],
-      "source_ip_is_private": true,
-      "source_ip_cidr": [
+      "ip_is_private": true,
+      "ip_cidr": [
         "192.168.20.0/24"
       ]
     }
