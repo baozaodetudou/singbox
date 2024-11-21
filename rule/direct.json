@@ -3,7 +3,6 @@
   "rules": [
     {
       "domain": [
-        "plex.direct",
         "doumao.fun"
       ],
       "domain_keyword": [
@@ -13,8 +12,10 @@
         "torrent"
       ],
       "domain_suffix": [
-        "plex.direct",
-        "hhan.club"
+        "v4.plex.tv",
+        "plex.tv",
+        "plexapp.com",
+        "plex.direct"
       ],
       "ip_cidr": [
         "192.168.20.0/24"
