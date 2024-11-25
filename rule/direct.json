@@ -10,7 +10,8 @@
         "tracker"
       ],
       "domain_suffix": [
-        "plex.direct"
+        "plex.direct",
+        "v4.plex.tv"
       ],
       "ip_cidr": [
         "192.168.20.0/24"
