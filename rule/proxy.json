@@ -5,7 +5,13 @@
       "domain": [
         "hub.docker.com",
         "fast.com",
-        "github.com",
+        "github.com"
+      ],
+      "domain_keyword": [
+        
+      ],
+      "domain_suffix": [
+        "provider.plex.tv",
         "www.plex.tv",
         "metadata-static.plex.tv",
         "metadata.provider.plex.tv",
@@ -22,12 +28,6 @@
         "scrobbles.plex.tv",
         "app.plex.tv",
         "features.plex.tv"
-      ],
-      "domain_keyword": [
-        
-      ],
-      "domain_suffix": [
-        "provider.plex.tv"
       ],
       "source_ip_cidr": [
         "192.168.20.135",
